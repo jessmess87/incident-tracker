@@ -15,11 +15,4 @@ def create_app(testing=False):
 
     db.init_app(app)
 
-    # ✅ Register your blueprint
-    from .incidents import bp as incidents_bp
-    app.register_blueprint(incidents_bp)
-
     return app
-
-
-

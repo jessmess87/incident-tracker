@@ -1,5 +1,6 @@
 from flask import Blueprint, jsonify, request
-from .models import Incident
+from .models import Incident, Category
+from . import db
 
 bp = Blueprint("incidents", __name__, url_prefix="/incidents")
 
